@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="题目描述现有一块草坪，长为20米，宽为2米，要在横中心线上放置半径为Ri的喷水装置，每个喷水装置的效果都会让以它为中心的半径为实数Ri(0&amp;lt;Ri&amp;lt;15)的圆被湿润，这有充足的喷水装置i（1&amp;lt;i&amp;lt;600)个，并且一定能把草坪全部湿润，你要做的是：选择尽量少的喷水装置，把整个草坪的全部湿润。">
+<meta name="description" content="题目描述在漆黑的夜里，N位旅行者来到了一座狭窄而且没有护栏的桥边。如果不借助手电筒的话，大家是无论如何也不敢过桥去的。不幸的是，N个人一共只带了一只手电筒，而桥窄得只够让两个人同时过。如果各自单独过桥的话，N人所需要的时间已知；而如果两人同时过桥，所需要的时间就是走得比较慢的那个人单独行动时所需的时间。问题是，如何设计一个方案，让这N人尽快过桥。">
 <meta name="keywords" content="贪心算法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="NYOJ-6  喷水装置（一）">
-<meta property="og:url" content="http://yoursite.com/2018/09/08/NYOJ-6/index.html">
+<meta property="og:title" content="NYOJ-47  过河问题">
+<meta property="og:url" content="http://yoursite.com/2018/09/10/NYOJ-47/index.html">
 <meta property="og:site_name" content="顾志兴">
-<meta property="og:description" content="题目描述现有一块草坪，长为20米，宽为2米，要在横中心线上放置半径为Ri的喷水装置，每个喷水装置的效果都会让以它为中心的半径为实数Ri(0&amp;lt;Ri&amp;lt;15)的圆被湿润，这有充足的喷水装置i（1&amp;lt;i&amp;lt;600)个，并且一定能把草坪全部湿润，你要做的是：选择尽量少的喷水装置，把整个草坪的全部湿润。">
+<meta property="og:description" content="题目描述在漆黑的夜里，N位旅行者来到了一座狭窄而且没有护栏的桥边。如果不借助手电筒的话，大家是无论如何也不敢过桥去的。不幸的是，N个人一共只带了一只手电筒，而桥窄得只够让两个人同时过。如果各自单独过桥的话，N人所需要的时间已知；而如果两人同时过桥，所需要的时间就是走得比较慢的那个人单独行动时所需的时间。问题是，如何设计一个方案，让这N人尽快过桥。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-08T12:47:47.039Z">
+<meta property="og:updated_time" content="2018-09-10T01:13:16.732Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="NYOJ-6  喷水装置（一）">
-<meta name="twitter:description" content="题目描述现有一块草坪，长为20米，宽为2米，要在横中心线上放置半径为Ri的喷水装置，每个喷水装置的效果都会让以它为中心的半径为实数Ri(0&amp;lt;Ri&amp;lt;15)的圆被湿润，这有充足的喷水装置i（1&amp;lt;i&amp;lt;600)个，并且一定能把草坪全部湿润，你要做的是：选择尽量少的喷水装置，把整个草坪的全部湿润。">
+<meta name="twitter:title" content="NYOJ-47  过河问题">
+<meta name="twitter:description" content="题目描述在漆黑的夜里，N位旅行者来到了一座狭窄而且没有护栏的桥边。如果不借助手电筒的话，大家是无论如何也不敢过桥去的。不幸的是，N个人一共只带了一只手电筒，而桥窄得只够让两个人同时过。如果各自单独过桥的话，N人所需要的时间已知；而如果两人同时过桥，所需要的时间就是走得比较慢的那个人单独行动时所需的时间。问题是，如何设计一个方案，让这N人尽快过桥。">
 
 
 
@@ -127,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/09/08/NYOJ-6/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/10/NYOJ-47/"/>
 
 
 
 
 
-  <title>NYOJ-6  喷水装置（一） | 顾志兴</title>
+  <title>NYOJ-47  过河问题 | 顾志兴</title>
   
 
 
@@ -296,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/08/NYOJ-6/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/10/NYOJ-47/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="顾志兴">
@@ -313,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">NYOJ-6  喷水装置（一）</h1>
+          <h1 class="post-title" itemprop="name headline">NYOJ-47  过河问题</h1>
         
 
         <div class="post-meta">
@@ -325,8 +325,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-08T20:44:13+08:00">
-                2018-09-08
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-10T08:56:19+08:00">
+                2018-09-10
               </time>
             
 
@@ -379,7 +379,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  748
+                  886
                 </span>
               
 
@@ -395,7 +395,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -416,24 +416,23 @@
       
 
       
-        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><h4 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h4><p>现有一块草坪，长为20米，宽为2米，要在横中心线上放置半径为Ri的喷水装置，每个喷水装置的效果都会让以它为中心的半径为实数Ri(0&lt;Ri&lt;15)的圆被湿润，这有充足的喷水装置i（1&lt;i&lt;600)个，并且一定能把草坪全部湿润，你要做的是：选择尽量少的喷水装置，把整个草坪的全部湿润。</p>
+        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><h4 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h4><p>在漆黑的夜里，N位旅行者来到了一座狭窄而且没有护栏的桥边。如果不借助手电筒的话，大家是无论如何也不敢过桥去的。不幸的是，N个人一共只带了一只手电筒，而桥窄得只够让两个人同时过。如果各自单独过桥的话，N人所需要的时间已知；而如果两人同时过桥，所需要的时间就是走得比较慢的那个人单独行动时所需的时间。问题是，如何设计一个方案，让这N人尽快过桥。</p>
 <a id="more"></a>
-<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>第一行m表示有m组测试数据<br>每一组测试数据的第一行有一个整数数n，n表示共有n个喷水装置，随后的一行，有n个实数ri，ri表示该喷水装置能覆盖的圆的半径。</p>
-<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>输出所用装置的个数</p>
-<h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><pre><code>2
-5
-2 3.2 4 4.5 6 
-10
-1 2 3 1 2 1.2 3 1.1 1 2
-</code></pre><h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><pre><code>2
-5
-</code></pre><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>首先了解一下贪心法的基本知识</p>
-<p>贪心法是指，在对<a href="https://baike.baidu.com/item/%E9%97%AE%E9%A2%98%E6%B1%82%E8%A7%A3/6693186" target="_blank" rel="noopener">问题求解</a>时，总是做出在当前看来是最好的选择。也就是说，不从整体最优上加以考虑，他所做出的是在某种意义上的局部<a href="https://baike.baidu.com/item/%E6%9C%80%E4%BC%98%E8%A7%A3/5208902" target="_blank" rel="noopener">最优解</a>。</p>
-<p>贪心算法不是对所有问题都能得到整体最优解，关键是贪心策略的选择，选择的贪心策略必须具备无后效性，即某个状态以前的过程不会影响以后的状态，只与当前状态有关。</p>
-<p>理解一下这道题题意，草坪的长和宽是定值，喷水装置的作用范围是一个圆形，圆形与矩形草坪相交。简单的画出示意图，由于题目说草坪一定能被填满，所以不考虑半径小于1m的情况，即我们只需把草坪的长填满，就填满了整个草坪。</p>
-<p>用简单的勾股定理可以把半径转化为占有的长度，即d=sqrt(r*r-1)，到这里这个问题就变成了一个简单的贪心问题了。</p>
-<p>我们对喷水装置的半径进行排序，从半径最大的开始选取，依次添加其他的喷水装置，知道把整个草坪填满。</p>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> m;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;m;<span class="comment">//m组测试数据</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;m;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> n;<span class="comment">//n个喷水装置</span></span><br><span class="line">        <span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">        <span class="keyword">double</span> a[n];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;n;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">double</span> x;</span><br><span class="line">            <span class="built_in">cin</span>&gt;&gt;x;</span><br><span class="line">            a[j]=<span class="built_in">sqrt</span>(x*x<span class="number">-1</span>);<span class="comment">//将半径转化为作用范围</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//先对喷水装置的数组排序</span></span><br><span class="line">        sort(a,a+n);<span class="comment">//对作用范围进行排序</span></span><br><span class="line">        <span class="keyword">int</span> index=<span class="number">0</span>;<span class="comment">//记录添加的喷水装置的数量</span></span><br><span class="line">        <span class="keyword">double</span> sum=<span class="number">0</span>;<span class="comment">//记录当前充满的长度</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=n<span class="number">-1</span>;j&gt;=<span class="number">0</span>;j--)</span><br><span class="line">        &#123;</span><br><span class="line">            sum=sum+a[j];<span class="comment">//将喷水装置添加进来</span></span><br><span class="line">            index++;</span><br><span class="line">            <span class="keyword">if</span>(sum&gt;=<span class="number">10</span>)</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;index&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>第一行是一个整数T(1&lt;=T&lt;=20)表示测试数据的组数<br>每组测试数据的第一行是一个整数N(1&lt;=N&lt;=1000)表示共有N个人要过河<br>每组测试数据的第二行是N个整数Si,表示此人过河所需要花时间。(0&lt;Si&lt;=100)</p>
+<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>输出所有人都过河需要用的最少时间</p>
+<h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><pre><code>1
+4
+1 2 5 10
+</code></pre><h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><pre><code>17
+</code></pre><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>只有一个手电筒，所以只能是两个人过河后再派一个人将手电筒送回来过河才能继续。</p>
+<p>要求过河需要的最少时间，我一开始的思路是要想时间最少，送手电筒回来的时间要是最短的，所以应该由过河最快的人一次将所有人送过去。后来发现这样的思路有局限性，就是当第二快的人与最快的人时间相差不大的时候，第二慢的人又与最慢的人相差不大的时候，得不到最优解。</p>
+<p>上网找了下思路，发现核心思路是将最慢的两个人送过河。而过河方法有两种（以下叙述将最快的记作1，第二快的记作2，最慢的记作n，第二慢的记作n-1）：</p>
+<p>1：   1先将2送过去，1回来；  n-1和n一起过河，2将手电筒送回来；</p>
+<p>2：   1将n送过去，1回来；   1将n-1送过去，1回来；</p>
+<p>两次花费的时间分别是  t[2]+t[1]+t[n]+t[2]  和  t[n]+t[1]+t[n-1]+t[2]</p>
+<p>我们只要判断这个时间哪个小，就采取哪种送法，这样每次能送过去2个最慢的人，依次进行，最后可能会剩下2个或者3个人。两个人的话就一起过河，三个人就1先将3送过去，1回来再和2一起过。</p>
+<p>另外，千万别忘了只有一个人的情况，本人卡在这里卡了好久，下意识就认为有很多人过河，其实题目并没有说明人数，所以一个人的情况也要考虑。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> m;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;m;<span class="comment">//m组测试数据</span></span><br><span class="line">    <span class="keyword">while</span>(m--)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> n;<span class="comment">//n个人</span></span><br><span class="line">        <span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">        <span class="keyword">int</span> a[n];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;n;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">cin</span>&gt;&gt;a[j];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//先对过桥时间的数组排序</span></span><br><span class="line">        sort(a,a+n);<span class="comment">//已经从大到小排序</span></span><br><span class="line">        <span class="keyword">int</span> sum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(n&gt;=<span class="number">4</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>((a[n<span class="number">-2</span>]+a[<span class="number">0</span>])&lt;(<span class="number">2</span>*a[<span class="number">1</span>]))</span><br><span class="line">            &#123;</span><br><span class="line">                sum=sum+<span class="number">2</span>*a[<span class="number">0</span>]+a[n<span class="number">-1</span>]+a[n<span class="number">-2</span>];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                sum=sum+a[<span class="number">0</span>]+<span class="number">2</span>*a[<span class="number">1</span>]+a[n<span class="number">-1</span>];</span><br><span class="line">            &#125;</span><br><span class="line">            n=n<span class="number">-2</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(n==<span class="number">3</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            sum=sum+a[<span class="number">0</span>]+a[<span class="number">1</span>]+a[n<span class="number">-1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(n==<span class="number">2</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            sum=sum+a[n<span class="number">-1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(n==<span class="number">1</span>)</span><br><span class="line">            sum=sum+a[n<span class="number">-1</span>];</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;sum&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -503,8 +502,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/04/first blog/" rel="next" title="第一次写博客">
-                <i class="fa fa-chevron-left"></i> 第一次写博客
+              <a href="/2018/09/10/NYOJ-14/" rel="next" title="NYOJ-14  会场安排问题">
+                <i class="fa fa-chevron-left"></i> NYOJ-14  会场安排问题
               </a>
             
           </div>
@@ -512,10 +511,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/09/08/NYOJ-12/" rel="prev" title="NYOJ-12  喷水装置（二）">
-                NYOJ-12  喷水装置（二） <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
