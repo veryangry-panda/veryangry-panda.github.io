@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[吴恩达-第一章-3]]></title>
+    <url>%2F2018%2F10%2F22%2Fml_1_3%2F</url>
+    <content type="text"><![CDATA[仅做记录在学习机器学习时的课后作业的答案]]></content>
+      <categories>
+        <category>机器学习</category>
+      </categories>
+      <tags>
+        <tag>课后作业</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Codeforces Round#510-B.Vitamins]]></title>
     <url>%2F2018%2F09%2F18%2FCF-510-B%2F</url>
     <content type="text"><![CDATA[题目题目链接：http://codeforces.com/contest/1042/problem/B 思路我们将果汁的价格当作vitamin的值，将所含的vitamin进行排序之后，有7种可能性：A,B,C,AB,AC,BC,ABC 将这七个值初始化为无穷大，每输入一个样例（果汁），如果这个值小于当前变量的值，就更新。经过这个操作后，这七个变量都是能得到的最小值了。 接下来只要将这七个变量组合成ABC，就得到了一种方案。有8种组合：A+B+C, A+BC, B+AC, C+AB, AB+BC, AB+AC, AC+BC, ABC。 然后可以用一个数组存一下每种方案的值，取一个最小值就行了。 代码123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081#include&lt;bits/stdc++.h&gt;using namespace std;#define INF 0x3f3f3f3fint main()&#123; int n; cin&gt;&gt;n; int A=INF, B=INF, C=INF, AB=INF, AC=INF, BC=INF, ABC=INF; for(int i=0;i&lt;n;i++) &#123; int cost; string s; cin&gt;&gt;cost&gt;&gt;s; sort(s.begin(),s.end()); if(s.size()==1) &#123; if(s[0]=='A'&amp;&amp;cost&lt;A) A=cost; if(s[0]=='B'&amp;&amp;cost&lt;B) B=cost; if(s[0]=='C'&amp;&amp;cost&lt;C) C=cost; &#125; else if(s.size()==2) &#123; if(s[0]=='A'&amp;&amp;s[1]=='B'&amp;&amp;cost&lt;AB) AB=cost; if(s[0]=='A'&amp;&amp;s[1]=='C'&amp;&amp;cost&lt;AC) AC=cost; if(s[0]=='B'&amp;&amp;s[1]=='C'&amp;&amp;cost&lt;BC) BC=cost; &#125; else if(cost&lt;ABC) ABC=cost; &#125; //cout&lt;&lt;A&lt;&lt;" "&lt;&lt;B&lt;&lt;" "&lt;&lt;C&lt;&lt;" "&lt;&lt;AB&lt;&lt;" "&lt;&lt;AC&lt;&lt;" "&lt;&lt;BC&lt;&lt;" "&lt;&lt;ABC&lt;&lt;endl; int max[8]; memset(max,-1,sizeof(int)*8); // for(int i=0;i&lt;5;i++) // cout&lt;&lt;max[i]&lt;&lt;" "; if((A+B+C)&lt;INF) max[0]=A+B+C; if((A+BC)&lt;INF) max[1]=A+BC; if((B+AC)&lt;INF) max[2]=B+AC; if((C+AB)&lt;INF) max[3]=C+AB; if(ABC&lt;INF) max[4]=ABC; if((AB+BC)&lt;INF) max[5]=AB+BC; if((AC+BC)&lt;INF) max[6]=AC+BC; if((AB+AC)&lt;INF) max[7]=AB+AC; vector&lt;int&gt; con; for(int i=0;i&lt;8;i++) &#123; if(max[i]&gt;-1) con.push_back(max[i]); &#125; int x=INF; if(con.empty()) x=-1; for(int i=0;i&lt;con.size();i++) &#123; if(con[i]&lt;x) x=con[i]; &#125; cout&lt;&lt;x&lt;&lt;endl;&#125;]]></content>
